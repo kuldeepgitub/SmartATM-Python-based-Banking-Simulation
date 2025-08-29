@@ -76,4 +76,4 @@ class Atm:
         print("Invalid Pin: ")
         self.Balance_enquiry()
 
-sbi = Atm(10000,12345)
+sbi = Atm()
