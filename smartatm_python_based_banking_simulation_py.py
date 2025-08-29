@@ -14,7 +14,7 @@ class Atm:
     self.pin=None
     self.display()
 
-  #Display Section
+  #Display
   def display(self):
     user_input=input('''Welcome to our Atm service:
               what you want to perform:
@@ -33,13 +33,13 @@ class Atm:
       self.Balance_enquiry()
     else:
       exit()
-
+  #Pin Genration
   def generate_pin(self):
     user_pin=int(input("Enter three digit Pin"))
     self.pin=user_pin
     print("Pin generated succussefully")
     self.display()
-
+  #Withdrawal
   def Withdrawal(self):
     user_pinw=int(input("Enter three digit Pin"))
     if self.pin==user_pinw:
